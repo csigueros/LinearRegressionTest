@@ -146,15 +146,14 @@ public class LinearRegressionExample extends JFrame{
 
     }
 
+    private double[][] getData() {
+        return data;
+    }
 
     public static void main(String[] args) {
         LinearRegressionExample demo = new LinearRegressionExample("Madrid", "Datos de Madrid");
         demo.pack();
         demo.setVisible(true);
-    }
-
-    public double[][] getData() {
-        return data;
     }
 
     private double[][] data = new double [10][2];
